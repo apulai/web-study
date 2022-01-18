@@ -19,25 +19,25 @@
 <body onload="setup_page()">
   <div id="header" class="header">
     <div id="inputfields">
-      Naptár generálása ettől a hónaptól: <table>
+      Generate calendar from this month: <table>
         <tr>
-          <td> év: </td>
+          <td> Year: </td>
           <td><input id="inputyear" type=number value="2021" style="width: 7em" onchange="generate_rows();"></td>
         </tr>
         <tr>
-          <td> hónap: </td>
+          <td> Month: </td>
           <td><input id="inputmonth" type=number min="1" max="12" value="05" onchange="generate_rows();"></td>
         </tr>
         <tr>
-          <td> Szélesség: (deg)</td>
+          <td> Width: (deg)</td>
           <td><input id="inputlatitude" type=number min="-180" max="180" value="47.4979" style="width: 7em" onchange="generate_rows();"></td>
         </tr>
         <tr>
-          <td> Hosszúság: (deg)</td>
+          <td> Length: (deg)</td>
           <td><input id="inputlongitude" type=number min="-90" max="90" value="19.0402" style="width: 7em" onchange="generate_rows();"></td>
         </tr>
         <tr>
-          <td> időzóna: </td>
+          <td> Timezone: </td>
           <td><input id="timezone" type=number min="-12" max="12" value="1" onchange="generate_rows();"></td>
         </tr>
         <tr>
