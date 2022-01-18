@@ -1,0 +1,83 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body{
+  font-family: Merriweather,sans-serif;
+}
+
+.calendargrid {
+  display: grid;
+  grid-template-columns: 10% 22.5% 22.5% 22.5% 22.5%;
+  justify-items: stretch;
+  justify-content: stretch;
+  border: 1px solid green;
+  width: 95%;
+  height: 100%
+  margin: 5px;
+  /*gap: 1px 1px;*/
+}
+
+.calendar1stcell {
+  margin: 0px;
+  border: 1px solid green;
+  padding: 5px;
+  font-style: italic;
+  font-family: Merriweather,sans-serif;
+}
+
+.calendarcell {
+  margin: 0px;
+  border: 1px solid green;
+  padding: 5px;
+  font-style: italic;
+  font-family: Merriweather,sans-serif;
+}
+
+.greybackround {
+  background-color: lightgrey !important;
+  -webkit-print-color-adjust: exact;
+}
+
+.header {
+  padding: 30px;
+  margin: 30px;
+  border: 1px #D3D3D3 solid;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.page {
+  width: 270mm;
+  #height: 297mm;
+  padding: 30px;
+  margin: 30px;
+  #border: 1px #D3D3D3 solid;
+  #border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.suntime {
+  font-size: 10;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media only print {
+  #header {
+    display: none;
+  }
+
+
+}

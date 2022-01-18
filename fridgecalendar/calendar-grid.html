@@ -1,0 +1,62 @@
+<!-- https://css-tricks.com/snippets/css/complete-guide-grid/ -->
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title> Fridge Calendar </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- google betuk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&family=Pacifico&display=swap" rel="stylesheet">
+  <!--link rel="stylesheet" href="calendar-grid.css"-->
+  <link rel="stylesheet" href="calendar-grid-printA4.css">
+  <script language="JavaScript" src="sunrise.js"></script>
+  <script language="JavaScript" src="calendar-grid.js"></script>
+</head>
+
+<body onload="setup_page()">
+  <div id="header" class="header">
+    <div id="inputfields">
+      Naptár generálása ettől a hónaptól: <table>
+        <tr>
+          <td> év: </td>
+          <td><input id="inputyear" type=number value="2021" style="width: 7em" onchange="generate_rows();"></td>
+        </tr>
+        <tr>
+          <td> hónap: </td>
+          <td><input id="inputmonth" type=number min="1" max="12" value="05" onchange="generate_rows();"></td>
+        </tr>
+        <tr>
+          <td> Szélesség: (deg)</td>
+          <td><input id="inputlatitude" type=number min="-180" max="180" value="47.4979" style="width: 7em" onchange="generate_rows();"></td>
+        </tr>
+        <tr>
+          <td> Hosszúság: (deg)</td>
+          <td><input id="inputlongitude" type=number min="-90" max="90" value="19.0402" style="width: 7em" onchange="generate_rows();"></td>
+        </tr>
+        <tr>
+          <td> időzóna: </td>
+          <td><input id="timezone" type=number min="-12" max="12" value="1" onchange="generate_rows();"></td>
+        </tr>
+        <tr>
+          <td> DST </td>
+          <td><input id="dst" type=number min="0" max="1" value="1" onchange="generate_rows();"></td>
+        </tr>
+        <tr>
+          <td> <input type="button" value="Re-calc" onclick="generate_rows();"></td>
+        </tr>
+      </table>
+    </div>
+    <br>
+  </div>
+
+  <div id="page" class="page">
+    <div id="calendarbody" class="calendargrid">
+      <!-- Ide jön a többi cella -->
+    </div>
+  </div>
+</body>
+
+</html>

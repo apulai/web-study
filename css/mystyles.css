@@ -1,0 +1,172 @@
+/*************** TAG Selectors ****************/
+body {
+  background-color: #E8F0F2;
+  text-align: center;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  /*font-family: 'Montserrat', sans-serif;*/
+}
+
+p {
+  line-height: 2;
+}
+
+h1 {
+  color: #053742;
+  margin: 50 auto 0 auto;
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #053742;
+  padding-bottom: 10px;
+  font-family: 'Merriweather', serif;
+}
+
+h3 {
+  color: #39A2DB;
+  font-family: 'Merriweather', serif;
+}
+
+hr {
+  color: #39A2DB;
+  width: 40%;
+  /* A floating imagek miatt tettem be, belógtak, ez meg törli a hatásukat */
+  clear: both;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+img::hover {
+  background-color: gold;
+}
+
+a {
+  font-family: 'Merriweather', serif;
+  margin: 10px 20px;
+  color: #053742;
+  text-decoration: none;
+}
+
+a:hover {
+  font-family: 'Merriweather', serif;
+  color: #E8F0F2;
+  margin: 10px 20px;
+}
+
+td {
+  line-height: 2;
+}
+
+/*************** CLASS Selectors ****************/
+.myicon {
+  background-color: #111;
+  height: 30px;
+  margin: 5px auto;
+  width: 30px;
+}
+
+.medium_size {
+  background-color: #111;
+  float: left;
+  height: 200px;
+  margin: 5px auto;
+  margin-right: 20px;
+  width: 200px;
+}
+
+.small_size_img {
+  width: 100px;
+}
+
+.medium_size_img {
+  width: 200px;
+  /*height: 200px;*/
+}
+
+
+
+.circular {
+  border-radius: 50%;
+}
+
+.year_data_table {
+  background-color: #111;
+  border-radius: 50%;
+  margin: 5px auto;
+  width: 200px;
+}
+
+.project-row {
+  width: 50%;
+  margin: 30px auto;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+div.project-row > div:last-child {
+  margin-left: auto;
+}
+
+
+.rightimg {
+  margin-left: 20px;
+}
+
+.leftimg {
+  margin-right: 20px;
+}
+
+
+
+
+.top-container {
+  width: 50%;
+  margin: 30px auto;
+  text-align: left;
+}
+
+
+
+.bottom-container {
+  padding-top: 20px;
+  background-color: #39A2DB;
+}
+
+.btn {
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color: #408c99;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+/*************** ID Selectors ****************/
+#dont-use-ids {
+  background-color: blue;
+}
