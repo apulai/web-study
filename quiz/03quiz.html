@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="03quiz.css">
+  <script src="03quiz.js"></script>
+</head>
+
+<body onload="load_quiz(); start_countdown_timer();">
+  <div class='quiz'>
+    <div id="clock1" class='question'>
+      Please complete the quiz on time!
+    </div>
+  </div>
+  <div id="quiz" class='quiz'>
+    <div id="Q1" class='question'>
+      lorem ipsum?
+      <p><input type="radio" id="A2" name="Q1"> 10 </input>
+      <p><input type="radio" id="A3" name="Q1"> 20 </input>
+      <p><input type="radio" id="A4" name="Q1"> 30 </input>
+      <p><input type="radio" id="A5" name="Q1"> 40 </input>
+    </div>
+
+  </div>
+  <div class="navi">
+    <input type="button" value="prev" onclick='move(-1);'>
+    <input type="button" value="next" onclick='move(1);'>
+    <input type="button" value="submit">
+  </div>
+</body>
+
+</html>

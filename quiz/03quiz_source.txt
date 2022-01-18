@@ -1,0 +1,20 @@
+Q1:Mikor kötötték meg a karlócai békét?
+A1a:1603
+A1b:1686
+A1c:1699
+A1d:1703
+Q2:Ki rohant ki Szigetvár várából?
+A2a:Zrinyi Miklós, a nagyapa
+A2b:Zrínyi Miklós, az unoka
+A2c:Zrínyi Ilona,
+A2d:Zrinski Mik
+Q3:Mit biztosított a Pragmatica Sanctio?
+A3a:Nőági örökösödést (1722)
+A3b:Kötelező iskolába járni
+A3c:Jobbágyok szabadon költözhetnek
+A3c:szabad vallásgyakorlást
+Q4:Mikor lépett trónra Mária Terézia?
+A4a:1707
+A4b:1722
+A4c:1740
+A4d:1780

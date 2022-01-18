@@ -1,0 +1,38 @@
+
+.topmenu {
+height: auto;
+width: auto;
+background-color: #00FFFF;
+//display: inline-block;
+border-radius: 10px;
+margin: 10px 10px;
+padding: 10px 20px;
+border: 2px solid red;
+}
+
+.center {
+  margin: auto;
+  width: 510px;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+.consarea {
+height:300px;
+width:300px;
+background-color: #F0FFFF;
+border-radius: 5%;
+border: 2px solid lightblue;
+margin: auto;
+transition: background-color 0.5s
+}
+
+.drawingarea {
+height:250px;
+width:500px;
+background-color: #F0FFFF;
+border-radius: 5%;
+border: 2px solid red;
+margin: auto;
+transition: background-color 0.5s
+}

@@ -1,0 +1,172 @@
+
+.topmenu {
+height: auto;
+width: auto;
+background-color: #00FFFF;
+//display: inline-block;
+border-radius: 10px;
+margin: 10px 10px;
+padding: 10px 20px;
+border: 2px solid red;
+}
+
+.center {
+  margin: auto;
+  width: 1100px;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+.drawingarea {
+height:600px;
+width: 1090px;
+background-color: #F0FFFF;
+border-radius: 5%;
+border: 2px solid red;
+margin: auto;
+transition: background-color 0.5s
+}
+
+.myline {
+  stroke: green;
+  stroke-width: 5px;
+}
+
+.myline:hover {
+  stroke: red;
+}
+
+.mycircle {
+  stroke: green;
+  fill: green;
+  stroke-width: 5px;
+}
+
+.mycircle:hover {
+  stroke: red;
+}
+
+.mycircleactive {
+  stroke: red;
+  fill: red;
+  stroke-width: 5px;
+}
+
+.myhexa {
+  fill: #b1fbb1;
+  stroke-width: 5px;
+}
+
+.myhexa:hover {
+  fill: blue;
+}
+
+.bluesee {
+  fill: lightblue;
+  stroke-width: 5px;
+}
+
+.bluesee:hover {
+  fill: #56c7ec;
+}
+
+.sheep {
+  fill: lightgreen;
+  stroke-width: 5px;
+}
+
+.sheep:hover {
+  fill: #54ef54;
+}
+
+.wheat {
+  fill: #ffeb00;
+  stroke-width: 5px;
+}
+
+.wheat:hover {
+  fill: yellow;
+}
+
+.forest {
+  fill: green;
+  stroke-width: 5px;
+}
+
+.forest:hover {
+  fill: lightgreen;
+}
+
+.brick {
+  fill: #c10606;
+  stroke-width: 5px;
+}
+
+.brick:hover {
+  fill: #ea4949;
+}
+
+.rock {
+  fill: #5f5b5b;
+  stroke-width: 5px;
+}
+
+.rock:hover {
+  fill: grey;
+}
+
+.desert {
+  fill: #a7a268b8;
+  stroke-width: 5px;
+}
+
+.desert:hover {
+  fill: #b3ae6fb8;
+}
+
+.dicetext {
+  fill: black;
+}
+.dicetextactive {
+  fill: cyan;
+}
+
+.red {
+  fill: red;
+  color: red;
+  stroke: red;
+  fill: red;
+  stroke-width: 5px;
+
+}
+.green {
+  fill: lime;
+  color: lime;
+  stroke: lime;
+  fill: lime;
+  stroke-width: 5px;
+}
+
+.blue {
+  fill: blue;
+  color: blue;
+  stroke: blue;
+  fill: blue;
+  stroke-width: 5px;
+}
+
+.white {
+  fill: white;
+  color: white;
+  stroke: white;
+  fill: white;
+  stroke-width: 5px;
+}
+
+.black {
+  fill: black;
+  color: black;
+  stroke: black;
+  fill: black;
+  stroke-width: 5px;
+}

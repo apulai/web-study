@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="02display.css">
+  <script src="02display.js"></script>
+</head>
+
+<body>
+  <div id="quiz" class='quiz'>
+    <div id="Q1" class='question'>
+      Mikor kötötték meg a karlócai békét?
+      <p><input type="radio" id="A2" name="Q1"> 1606 </input>
+      <p><input type="radio" id="A3" name="Q1"> 1686 </input>
+      <p><input type="radio" id="A4" name="Q1"> 1699 </input>
+      <p><input type="radio" id="A5" name="Q1"> 1703 </input>
+    </div>
+    <div class="question">
+      <input type="button" value="hide" onclick='hide("Q1");'>
+      <input type="button" value="show" onclick='show("Q1");'>
+    </div>
+
+    <div id="Q6" class='question'>
+      Ki rohant ki Szigetvár várából?
+      <p><input type="radio" id="A7" name="Q2"> Zrínyi Miklós, a nagyapa  </input>
+      <p><input type="radio" id="A8" name="Q2"> Zrínyi Miklós, az unoka </input>
+      <p><input type="radio" id="A9" name="Q2"> Zrínyi Ilona </input>
+      <p><input type="radio" id="A10" name="Q2"> Zrinsk' Mik </input>
+    </div>
+    <div class="question">
+      <input type="button" value="hide" onclick='hide("Q6");'>
+      <input type="button" value="show" onclick='show("Q6");'>
+    </div>
+
+  </div>
+</body>
+
+</html>

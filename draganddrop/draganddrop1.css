@@ -1,0 +1,26 @@
+.box150150 {
+height: 150px;
+width: 150px;
+background-color: #aaaaaa;
+display: inline-block;
+//border-radius: 0px;
+border: 1px solid red;
+border: 0px
+margin: 0px;
+padding: 0px;
+text-align: center;
+}
+
+.row
+{
+/* Between the blocks there is a small gap.
+// used: https://css-tricks.com/fighting-the-space-between-inline-block-elements
+// https://codepen.io/chriscoyier/pen/hmlqF */
+display: flex;
+//height: 150px;
+border-radius: 0px;
+margin: 0px 0px;
+padding: 0px 0px;
+border: 0px
+//border: 1px solid green;
+}

@@ -1,0 +1,10 @@
+.oraforma{
+  display: flex;
+  margin: auto;
+  width: 30%;
+  border: 3px solid green;
+  padding: 10px;
+  align-items: center;
+  font-style: italic;
+  font-family: fantasy;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="./draganddrop1.css">
+</head>
+<body>
+
+Drag and drop the pieces to the right place!
+<p>
+<div class="row">
+<div id="empty1" class="box150150" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="empty2" class="box150150" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+<div class="row">
+<div id="empty3" class="box150150" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="empty4" class="box150150" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+
+<hr>
+
+<div id="inprogress"> Waiting for your first move! </div>
+
+<hr>
+
+<div id="empty5" class="box150150" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img id="part1" class="box150150" src="img1.jpg" draggable="true" ondragstart="drag(event)" width="150" height="150">
+</div>
+<div id="empty6" class="box150150" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img id="part2" class="box150150" src="img2.jpg" draggable="true" ondragstart="drag(event)" width="150" height="150">
+</div>
+<div id="empty7" class="box150150" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img id="part3" class="box150150" src="img3.jpg" draggable="true" ondragstart="drag(event)" width="150" height="150">
+</div>
+<div id="empty8" class="box150150" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img id="part4" class="box150150" src="img4.jpg" draggable="true" ondragstart="drag(event)" width="150" height="150">
+</div>
+
+<script src="./draganddrop1.js"></script>
+</body>
+</html>
