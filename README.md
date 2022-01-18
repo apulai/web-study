@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+   <link rel="stylesheet" href="css/mystyles.css">
   <div class="top-container">
     <h1>Javascript, CSS and HTML studies</h1>
     <p>I am using this repo to collect my Javascript, CSS and HTML studies.</p>
@@ -34,13 +34,6 @@
       </div>
     </div>
     <p></p>
-
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.facebook.com/pulai.andras">LinkedIn</a>
-      <a class="footer-link" href="https://www.facebook.com/pulai.andras">Facebook</a>
-      <a class="footer-link" href="https://github.com/apulai">GitHub</a>
-      <p>© 2021 Andras Pulai.</p>
-    </div>
 
 
 </body>
