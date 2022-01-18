@@ -1,6 +1,7 @@
 <h1>Javascript, CSS and HTML studies</h1>
 <p>I am using this repo to collect my Javascript, CSS and HTML studies.
-Please open <a href="https://apulai.github.io/web-study/>index.html</a></p>
+Please open <a href="https://apulai.github.io/web-study/index.html">https://apulai.github.io/web-study/index.html</a>
+</p>
 <a href="fridgecalendar/calendar-id.html">
 <h3>Fridge calendar</h3></a>
 <p>This is a project for printing a family calendar. I've studied the grid layout in this project.
