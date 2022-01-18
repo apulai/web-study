@@ -47,7 +47,6 @@ img::hover {
 
 a {
   font-family: 'Merriweather', serif;
-  margin: 10px 20px;
   color: #053742;
   text-decoration: none;
 }
@@ -55,7 +54,7 @@ a {
 a:hover {
   font-family: 'Merriweather', serif;
   color: #E8F0F2;
-  margin: 10px 20px;
+
 }
 
 td {

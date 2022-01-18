@@ -16,7 +16,7 @@
   <hr>
 
   <div class="center">
-    Jatéktér<br>
+    Current playing field<br>
     <svg class='drawingarea' id='canvas1' viewBox="200 0 1000 1600" version="1.1" xmlns="http://www.w3.org/2000/svg">
     </svg>
     <input type="button" value="-" onclick="zoom('canvas1',1.05);">
@@ -28,15 +28,15 @@
     <input type="button" value="save" onclick="savefield();">
   </div>
   <div id="dice" class="center">
-    <input type="button" value="Új dobás!" onclick="rollthedice();">
-    utoljára dobott szám: <span id="lastroll"> </span>
+    <input type="button" value="Roll the dice!" onclick="rollthedice();">
+    Last number: <span id="lastroll"> </span>
     <div id="gotresource">
-      <br> Építs falukat és kapj nyersanyagot!
+      <br> Build villages and get resources!
     </div>
   </div>
   <div class="center">
     <div id="playercolor2" class="red">
-      Játékos színe:
+      Player color:
       <select id="playercolor" name="mycolor" onchange="setplayercolor();">
         <option class="red" value="red"> piros </option>
         <option class="green" value="green"> zöld </option>
@@ -47,7 +47,8 @@
 
       <!--input type="button" value="set player color" onclick="setplayercolor();"-->
     </div>
-    <br> Változtasd meg a játékos színét és jelölj ki utakat vagy városokat
+    <br>
+         Change the color of the player and select new routes or cities.
   </div>
   <div class="center">
     <select id="playfield" name="playfield">
@@ -56,9 +57,9 @@
       <option> playfield3 </option>
       <option> playfield4 </option>
     </select>
-    <input type="button" value="Rajzold újra!" onclick="selectplayfield();">
+    <input type="button" value="Redraw playing field" onclick="selectplayfield();">
     <div>
-      <br>Válassz másik pályát!
+      <br>Select a different playing field!
     </div>
   </div>
 </body>

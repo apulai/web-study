@@ -16,7 +16,20 @@
         </p>
       </div>
     </div>
-    <p></p>
+
+    <div class="project-row">
+      <div>
+        <a href="catan_study/hatszogek2.html">
+          <h3>Catan study</h3>
+        </a>
+
+        <p>This is a project for testing SVG. I wanted to create a Catan like playfield on screen.
+          You can add routes and cities. You can roll the dice and check the outcome on the JS console.
+          You can also observe who got points.
+        </p>
+      </div>
+
+    </div>
 
 
 </body>
