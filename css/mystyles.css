@@ -54,7 +54,6 @@ a {
 a:hover {
   font-family: 'Merriweather', serif;
   color: #E8F0F2;
-
 }
 
 td {
@@ -87,8 +86,6 @@ td {
   /*height: 200px;*/
 }
 
-
-
 .circular {
   border-radius: 50%;
 }
@@ -110,10 +107,13 @@ td {
   align-items: center;
 }
 
-div.project-row > div:last-child {
+/*div.project-row > div:last-child {
   margin-left: auto;
-}
+}*/
 
+redtext {
+  color: "red";
+}
 
 .rightimg {
   margin-left: 20px;
@@ -123,16 +123,11 @@ div.project-row > div:last-child {
   margin-right: 20px;
 }
 
-
-
-
 .top-container {
   width: 50%;
   margin: 30px auto;
   text-align: left;
 }
-
-
 
 .bottom-container {
   padding-top: 20px;

@@ -1,0 +1,41 @@
+<%- include("header"); %>
+
+<script src="https://kit.fontawesome.com/1ee3042de4.js" crossorigin="anonymous"></script>
+
+<div class="box" id="heading">
+  <h1>Our ToDo lists</h1>
+</div>
+
+<div class="box">
+  <% for( var i = 0 ; i < listnames.length; i ++) { %>
+
+  <div class="item">
+
+    <p class="tooltip" onclick="location.href='<%=listnames[i].name%>'"><%= listnames[i].name %>
+      <span class="tooltiptext">Click here to see the list.</span></p>
+    <span class="filler"> </span>
+    <form action="/listoflists" method="post">
+      <button class="circlebutton" onClick="this.form.submit();"">&#10006;</button>
+      <input type="hidden" name="listid" value="<%= listnames[i]._id %>"></input>
+      <input type="hidden" name="request" value="delete"></input>
+    </form>
+    <form action="/renamelist" method="get">
+      <button class="circlebutton" name="modifybtn" value="modifybtn" onClick="this.form.submit();">  <i class="fas fa-pencil-alt"></i></button>
+      <input type="hidden" name="listid" value="<%= listnames[i]._id %>"></input>
+      <input type="hidden" name="listname" value="<%=listnames[i].name%>"></input>
+      <input type="hidden" name="request" value="modify"></input>
+    </form>
+  </div>
+  <% } %>
+  <div class="item">
+    <br>
+    <input type="text" id="newlistname" name="newList" placeholder="Select or create a new list" autocomplete="off" </input>
+    <span class="filler"> </span>
+    <button class="circlebutton" onclick="location.href=document.getElementById('newlistname').value">+
+    </button>
+  </div>
+</div>
+
+
+<%- include("footer"); %>
+<p></p>

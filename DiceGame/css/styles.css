@@ -1,0 +1,74 @@
+body{
+  /* box-sizing: content-box; */
+  box-sizing: border-box;
+}
+
+.headerarea
+{
+  text-align: center;
+}
+
+.furabetu
+{
+  color: green;
+  font-family: Pacifico, sans-serif;
+  font-size: 3rem;
+}
+
+.inline
+{
+  display: inline;
+  margin: auto;
+}
+
+.smallimg
+{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.gamearea{
+  width: 700px;
+  height: 300px;
+  padding-top: 50px;
+  /* background-color: green; */
+  margin: auto;
+}
+
+.dice{
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  border-radius: 40px;
+  display: inline-block;
+  text-align: center;
+}
+
+.dot{
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 100%;
+  display: inline-block;
+  margin: 18px;
+  text-align: center;
+}
+
+.diceseparator{
+  width: 80px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  /* background-color: lightblue; */
+  display: inline-block;
+}
+
+.hidden{
+  /* visibility: : hidden; */
+  display: none;
+}
+
+.bluebg{
+  background-color: blue;
+}

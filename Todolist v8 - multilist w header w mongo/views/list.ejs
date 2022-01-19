@@ -1,0 +1,33 @@
+<%- include("header"); %>
+
+
+<div class="box" id="heading">
+  <h1 class="tooltip" onclick="location.href='/listoflists'">It's <%= listTitle %>
+    <span class="tooltiptext"> Click here to see all available lists!<br><br>To start a new list, just type a new name in the URL!</span>
+  </h1>
+</div>
+
+<div class="box">
+  <% for( var i = 0 ; i < items.length; i ++) { %>
+  <form class="" action="/delete" method="post">
+    <div class="item">
+      <button class="circlebutton" onClick="this.form.submit();"">&#10006;</button>
+      <input type="hidden" name="id" value="<%=items[i]._id%>" onChange="this.form.submit();">
+      <p><%= items[i].name %></p>
+    </div>
+    <input type="hidden" name="listname" value="<%=listTitle%>"></input>
+  </form>
+
+  <% } %>
+  <br>
+  <section id="input">
+    <form class="item" action="/" method="post">
+      <label for="">ToDo</label>
+      <!-- <input type="text" name="newItem" placeholder="Enter what to do!" autocomplete="off"> -->
+      <input type="text" name="newItem" placeholder="Enter what to do!" autocomplete="off">
+      <button type="submit" name="listname" value="<%=listTitle%>">+</button>
+    </form>
+  </section>
+</div>
+
+<%- include("footer"); %>

@@ -1,0 +1,31 @@
+<%- include("header"); %>
+
+
+<div class="box" id="heading">
+  <h1 onclick="location.href='/listoflists'">Rename list: <%= listTitle %>
+  </h1>
+</div>
+
+<div class="box">
+  <form class="" action="/renamelist" method="post">
+    <div class="item">
+      <input type="text" name="newlistname" placeholder="Enter new list name"></input>
+      <span class="filler">  </span>
+      <button class="circlebutton" onClick="this.form.submit();"">&#10003;</button>
+      <input type="hidden" name="id" value="<%=listid%>">
+      <input type="hidden" name="oldlistname" value="<%=listTitle%>">
+    </div>
+  </form>
+  <br>
+
+  <div class="item">
+    <p>
+      Or simply go back ...   </p>
+      <span class="filler">  </span>
+      <button class="circlebutton" onclick="location.href='/listoflists'">&#8679;</button>
+
+  </div>
+
+</div>
+
+<%- include("footer"); %>
