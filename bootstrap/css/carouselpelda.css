@@ -1,0 +1,16 @@
+.wrapper {
+  margin: auto;
+  padding: 40px;
+  width: 70%;
+  text-align: center;
+}
+
+.carousel
+{
+  background-color: white;
+}
+
+.carousel-inner > .carousel-item > img {
+  width:640px;
+  height:360px
+}

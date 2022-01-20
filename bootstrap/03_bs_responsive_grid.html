@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <title>Responsive grid</title>
+</head>
+
+<body>
+  <h1>Bootstrap responsive megtanulása</h1>
+  <p>Kikerült belőle egy container, ami "ugrálva" (azaz nem folyamatosan) igazította magát a az oldal szélességéhez.
+    Igy csúnyább az oldal de jobban látszik mi is történik. Meg a hivatalos is így nézett ki.
+  </p>
+
+  <p>Ez a két oszlop mindenképpen a viewport felét foglalja el:</p>
+
+  <div class="row">
+    <div class="col" style="background-color: red; border: 1px solid;"> col </div>
+    <div class="col" style="background-color: red; border: 1px solid;"> col </div>
+  </div>
+
+  <p>Most még nem responisive. A képernyőt 12 egyforma széles részre osztom, a méretezés már hasznája a 12-es felosztást:
+    <br>Itt most minden annyi 12-edet használ, amennyit előírtunk neki!</p>
+
+  <div class="row">
+    <div class="col-6" style="background-color: green; border: 1px solid;"> col-6 </div>
+    <div class="col-3" style="background-color: green; border: 1px solid;"> col-3 </div>
+    <div class="col-2" style="background-color: green; border: 1px solid;"> col-2 </div>
+    <div class="col-1" style="background-color: green; border: 1px solid;"> col-1 </div>
+  </div>
+
+  <p> Most lesz kicsit responsive:
+    <br> md: közepes képernyőn, vagy annál nagyobbon 6 egységet a 12-ből, de az alatt teljes szélességet kérek. </p>
+
+  <div class="row">
+    <div class="col-md-6" style="background-color: lightblue; border: 1px solid;"> col-md-6 </div>
+    <div class="col-md-6" style="background-color: lightblue; border: 1px solid;"> col-md-6 </div>
+  </div>
+
+  <p> Most lesz nagyon responsive:
+    <br> lg nagy képernyőn 4 oszlop jelenjen meg => 3 egység a 12-ből (12/4=3 col-lg-3),
+    <br> md közepes képernyőn 3 oszlop jelenjen meg => 4 egység a 12-ből (12/3=4 col-md-4),
+    <br> sm kicsi képernyőn 2 oszlop jelenjen meg => 6 egység a 12-ből (12/2=6 col-sm-6) </p>
+
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: lightgreen; border: 1px solid;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: lightgreen; border: 1px solid;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: lightgreen; border: 1px solid;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: lightgreen; border: 1px solid;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: lightgreen; border: 1px solid;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: lightgreen; border: 1px solid;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: lightgreen; border: 1px solid;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: lightgreen; border: 1px solid;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: lightgreen; border: 1px solid;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: lightgreen; border: 1px solid;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: lightgreen; border: 1px solid;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: lightgreen; border: 1px solid;"> col-lg-3 col-md-4 col-sm-6 </div>
+  </div>
+
+  <p> Gyakorlás
+    <br> Megpróbáljuk leutánozni az Airbnb működését. Minnél kisebb a képernyő, annál kevesebb képet mutat meg.
+    <br> Csináljuk meg a következő elrendezést: 6 oszlop (6 kép) a nagy, 4 oszlop (4 kép) a közepes, 1 oszlop a kicsi kérpernyőn:
+    <br> lg nagy képernyőn 6 oszlop => 2 egység a 12-ből (12/6=2 col-lg-2),
+    <br> md közepes képernyőn 4 oszlop => 3 egység (12/4=3 col-md-3),
+    <br> sm képernyőn 1 oszlop => 12 egység (12/1=12 col-sm-12) </p>
+
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: yellow; border: 1px solid;"> col-lg-2 col-md-3 col-sm-12 </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: yellow; border: 1px solid;"> col-lg-2 col-md-3 col-sm-12 </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: yellow; border: 1px solid;"> col-lg-2 col-md-3 col-sm-12 </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: yellow; border: 1px solid;"> col-lg-2 col-md-3 col-sm-12 </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: yellow; border: 1px solid;"> col-lg-2 col-md-3 col-sm-12 </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: yellow; border: 1px solid;"> col-lg-2 col-md-3 col-sm-12 </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: yellow; border: 1px solid;"> col-lg-2 col-md-3 col-sm-12 </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: yellow; border: 1px solid;"> col-lg-2 col-md-3 col-sm-12 </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: yellow; border: 1px solid;"> col-lg-2 col-md-3 col-sm-12 </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: yellow; border: 1px solid;"> col-lg-2 col-md-3 col-sm-12 </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: yellow; border: 1px solid;"> col-lg-2 col-md-3 col-sm-12 </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color: yellow; border: 1px solid;"> col-lg-2 col-md-3 col-sm-12 </div>
+  </div>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

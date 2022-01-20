@@ -41,23 +41,33 @@ th, td {
   text-align: left;
 }
 
-img::hover {
-  background-color: gold;
+img:hover {
+  border: 1px;
+  border-color: gold;
 }
 
 a {
   font-family: 'Merriweather', serif;
-  color: #053742;
+  color: #39A2DB;
   text-decoration: none;
 }
 
 a:hover {
   font-family: 'Merriweather', serif;
-  color: #E8F0F2;
+  color: blue;
 }
 
 td {
   line-height: 2;
+}
+
+code {
+  background-color: #EEEEEE;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 /*************** CLASS Selectors ****************/
@@ -110,7 +120,6 @@ td {
 /*div.project-row > div:last-child {
   margin-left: auto;
 }*/
-
 redtext {
   color: "red";
 }

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/carouselpelda.css">
+  <title>Bootstrap Caroussel</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+
+    <h1>Bootstrap Carousselek megtanulása.</h1>
+    <p>Kb innen vettünk példákat: <a href="https://getbootstrap.com/docs/5.1/components/carousel/">BS Carousel példák</a>
+      <br>Ne tedd az egeret a képre mert akkor nem fog magától arrébb menni!
+      <br>Magyarázatok a html fájlban!
+    </p>
+
+
+    <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <!-- Magyarazatok
+     slide: hogy legyen-e slide effektus
+     data-bs-ride="carousel": hogy menjen-e magától
+     data-bs-interval="3000": hogy 3 mp-enként váltson
+     id: nagyon fontos az id-je, neve: ezt targetelik meg a lenti buttonok
+   -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- Active: Az egyik elemnek activnak kell lennie -->
+          <img src="img/free-green-mountain-png-mountain-cartoon-images-png.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" style="background-color: green;">
+          <img src="img/landscape-mountain-river.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" style="background-color: blue;">
+          <img src="img/cartoon-mountains-01.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <!-- Carousel inner szekció vége, most jön a control szekció
+    data-bs-target: kire melyik carouselre vonatkoznnak a gombok, ezt fontos!
+       -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+        <!-- Ez itt a nyilacska rajza, aria-hidden: nem kell felolvasni -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <!-- Gondolom ezt kell felolvasni -->
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <!-- data-bs-target: kire irányul ez a button, kire hat ha megnyomom -->
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <p>Automatán lépkedős caroussel és ne is vidd rá az egeret, mert akkor megáll!</p>
+
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
