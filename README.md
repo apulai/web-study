@@ -1,5 +1,6 @@
 <h1>Javascript, CSS and HTML studies</h1>
 <p>I am using this repo to collect my Javascript, CSS and HTML studies.
+<br>
 Please open <a href="https://apulai.github.io/web-study/index.html">https://apulai.github.io/web-study/index.html</a>
 </p>
 
